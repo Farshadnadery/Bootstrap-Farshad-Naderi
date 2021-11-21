@@ -1,0 +1,217 @@
+body {
+  font-size: .875rem; }
+
+main {
+  background-color: #F7F8FC; }
+
+h2 {
+  font-weight: normal; }
+
+.left-content {
+  padding: 15px;
+  padding-bottom: 0px; }
+  .left-content h3 {
+    font-size: 15px;
+    color: #252733; }
+  .left-content p {
+    color: #9FA2B4; }
+
+/*
+   * Sidebar
+   */
+.sidebar {
+  position: fixed;
+  top: 0;
+  /* rtl:raw:
+    right: 0;
+    */
+  bottom: 0;
+  /* rtl:remove */
+  left: 0;
+  z-index: 100;
+  /* Behind the navbar */
+  padding: 48px 0 0;
+  /* Height of navbar */
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1); }
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* Scrollable contents if viewport is shorter than content. */ }
+
+.sidebar .nav-item .nav-link.active {
+  border-left: 3px solid #DDE2FF; }
+
+.sidebar .nav-link {
+  font-weight: 500;
+  color: #A4A6B3;
+  padding: 15px; }
+
+.sidebar .nav-link .feather {
+  margin-right: 4px;
+  color: #727272; }
+
+.sidebar .nav-link.active {
+  color: #DDE2FF;
+  background-color: #9fa2b445; }
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+  color: inherit; }
+
+.sidebar-heading {
+  font-size: .75rem;
+  text-transform: uppercase; }
+
+/*
+   * Navbar
+   */
+.navbar-brand {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0.25);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.25); }
+
+.navbar .navbar-toggler {
+  top: .25rem;
+  right: 1rem; }
+
+.navbar .form-control {
+  padding: .75rem 1rem;
+  border-width: 0;
+  border-radius: 0; }
+
+.form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.1); }
+
+.form-control-dark:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.25); }
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none; }
+
+.feather {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom; }
+
+/*
+   * Top Row - 4 boxes
+*/
+.status-boxes {
+  display: block;
+  text-decoration: none;
+  background-color: #fff;
+  text-align: center;
+  border: 1px solid #DFE0EB;
+  border-radius: 8px;
+  padding: 40px 0px;
+  transition: ease-in-out all 0.3s; }
+  .status-boxes h3 {
+    color: #9FA2B4;
+    font-size: 20px;
+    transition: ease-in-out all 0.3s; }
+  .status-boxes span {
+    display: block;
+    color: #252733;
+    font-weight: bold;
+    font-size: 35px;
+    transition: ease-in-out all 0.3s; }
+  .status-boxes:hover {
+    border-color: #3751FF; }
+    .status-boxes:hover span, .status-boxes:hover h3 {
+      color: #3751FF; }
+
+/*
+   * Today's trends boxes
+*/
+.trend-status-boxes {
+  text-align: center;
+  border-bottom: 1px solid #DFE0EB;
+  border-left: 1px solid #DFE0EB;
+  padding: 29px 24px; }
+  .trend-status-boxes:last-child {
+    border-bottom: none; }
+  .trend-status-boxes h4 {
+    color: #9FA2B4;
+    font-size: 15px;
+    font-weight: normal; }
+  .trend-status-boxes span {
+    display: block;
+    color: #252733;
+    font-weight: bold;
+    font-size: 15px; }
+
+.middle-content {
+  background-color: #fff;
+  border: 1px solid #DFE0EB;
+  border-radius: 8px;
+  margin-top: 30px; }
+
+.btn-toolbar ul {
+  list-style: none;
+  border-right: 1px solid #DDE2FF;
+  margin-right: 20px;
+  padding-right: 10px; }
+  .btn-toolbar ul li {
+    float: left; }
+    .btn-toolbar ul li:last-child a {
+      position: relative; }
+  .btn-toolbar ul a {
+    color: #C5C7CD;
+    display: inline-block;
+    margin: 7px 7px; }
+
+.btn-toolbar img {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #DDE2FF;
+  margin-left: 7px;
+  border-radius: 50px; }
+
+.btn-toolbar .notif-circle {
+  width: 8px;
+  height: 8px;
+  background-color: #3751FF;
+  border-radius: 50px;
+  display: block;
+  position: absolute;
+  right: 1px;
+  border: 1px solid #fff; }
+
+.table-boxes {
+  margin: 30px auto;
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #DFE0EB;
+  border-radius: 8px; }
+  .table-boxes a {
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: #3751FF; }
+  .table-boxes table td:last-child {
+    text-align: right;
+    color: #9FA2B4;
+    padding: 10px; }
+
+.form-check {
+  margin-bottom: 0px; }
+
+@media (max-width: 767px) {
+  .status-boxes {
+    margin-bottom: 15px; }
+  .table-boxes {
+    margin-bottom: 0px; } }
